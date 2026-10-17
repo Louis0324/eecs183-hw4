@@ -1,0 +1,72 @@
+{
+  "format_version": 1,
+  "kind": "hw4_tts_starter",
+  "model_config": {
+    "d_model": 768,
+    "n_heads": 12,
+    "n_layers": 12,
+    "max_seq_len": 2048
+  },
+  "architecture": {
+    "family": "hw4-tts-transformer-encoder-v1",
+    "text_vocab_size": 151663,
+    "speech_vocab_size": 6561,
+    "speech_embedding_size": 6562,
+    "special_vocab_size": 2,
+    "output_size": 6562,
+    "d_model": 768,
+    "n_heads": 12,
+    "n_layers": 12,
+    "max_seq_len": 2048,
+    "dim_feedforward": 3072,
+    "dropout_settings": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "activation": "relu",
+    "norm_first": false,
+    "layer_norm_eps": [
+      1e-05,
+      1e-05
+    ],
+    "bias_settings": [
+      true,
+      true,
+      true
+    ],
+    "batch_first": true,
+    "final_norm": false
+  },
+  "text_tokenizer": {
+    "vocab_size": 151663,
+    "vocabulary_sha256": "1f56bbadd3827c7d6a747623ffe71348d7d299f95e6c116dd61c0bfbbf967651",
+    "pad_id": 151643,
+    "eos_id": 151643
+  },
+  "storage_dtype": "float16",
+  "source_training": {
+    "completed_epochs": 2,
+    "training_examples_per_epoch": 354780,
+    "validation_loss": 4.577626412272161,
+    "initialization": "fresh original architecture",
+    "optimizer_included": false
+  },
+  "tokenizer_source": {
+    "repository": "FunAudioLLM/CosyVoice2-0.5B",
+    "revision": "eec1ae6c79877dbd9379285cf8789c9e0879293d"
+  },
+  "evaluation_status": "complete",
+  "filename": "hw4-tts-starter.pt",
+  "bytes": 426433302,
+  "sha256": "4cb40a7140b1055b7e077232a202f5600ce4a33eb955e8ff8ff1825b5fd54463",
+  "evaluation": {
+    "wer": 0.23545240497813658,
+    "examples": 200,
+    "nonempty": 200,
+    "protocol": "All 200 fixed homework texts; provided reference implementation; fixed staff voice prompt; Whisper large-v3-turbo. Measures intelligibility, not speaker similarity.",
+    "record": "validation/reference-tts-starter.json",
+    "nonempty_normalized": 199
+  }
+}

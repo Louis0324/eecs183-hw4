@@ -1,0 +1,53 @@
+{
+  "phoneme": {
+    "id": "1UuABo6aDByR61DPcESzc6jm5aMAAOM2Y",
+    "destination": "phoneme_layer_datasets",
+    "status": "HTTP 404 on 2026-10-16; replacement required",
+    "replacement": "hw4-data-a.zip: data/probes, shared with MFCC"
+  },
+  "mfcc": {
+    "id": "12ikp8GxiU7Ul3i5fR-9Sz2YMt9Jdshv4",
+    "destination": "mfcc_layer_datasets",
+    "status": "HTTP 404 on 2026-10-16; replacement required",
+    "replacement": "hw4-data-a.zip: data/probes, shared with phonemes"
+  },
+  "asr": {
+    "id": "1KEX_sLTRGOt82DjMsOt7ItqwI7SFN49G",
+    "destination": "asr",
+    "status": "HTTP 404 on 2026-10-16; replacement required",
+    "replacement": "hw4-data-b.zip"
+  },
+  "speakers": {
+    "id": "1L7r1c6_CIPVxNIQVPfrhD_Wt1MKCypU1",
+    "destination": "speakers",
+    "status": "download verified 2026-10-16"
+  },
+  "tts": {
+    "id": "1q5OdFHgXBtdK5MHJCWmWeyBHmz4Y-QVy",
+    "destination": "tts",
+    "status": "download verified 2026-10-16",
+    "release": "hw4-data-c.zip; full original training cache retained"
+  },
+  "releases": {
+    "hw4-data-a.zip": {
+      "bytes": 237424567,
+      "sha256": "4ad229f2df3f9785524cca8788ec3897e0ad7601818df8374f88bceb9f9b7307",
+      "distribution": "Course materials; archive supplied in dist/"
+    },
+    "hw4-data-b.zip": {
+      "bytes": 148283812,
+      "sha256": "b7e854b780c4b05a1d680afe2a263381eb618fd647bba14e99beb98c8e8e730d",
+      "distribution": "Course materials; archive supplied in dist/"
+    },
+    "hw4-data-c.zip": {
+      "bytes": 123823568,
+      "sha256": "00e9f36b2b6a2877d13da09b828df0307f8511e33bf9273243095ba712272cdd",
+      "distribution": "Course materials; archive supplied in dist/"
+    },
+    "hw4-speakers.zip": {
+      "bytes": 225076304,
+      "sha256": "f5762cb01bb195bd7906694fb43022e728c8ce6cebf269a6fae72d9dd4d83550",
+      "distribution": "Course materials; archive supplied in dist/"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+# Keep Colab's matched torch/torchaudio CUDA installation.
+# Transformers 4.x is the interface used by this homework (5.x changes it).
+transformers>=4.51,<5
+huggingface_hub>=0.34,<1
+numpy>=1.26,<3
+scikit-learn>=1.5,<2
+matplotlib>=3.8,<4
+soundfile>=0.12,<1
+librosa>=0.11,<1
+jiwer>=3.1,<5
+gdown>=5.2,<6
+tqdm>=4.66,<5

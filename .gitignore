@@ -1,0 +1,32 @@
+# Runtime files and large course assets are not committed to the student repo.
+.venv/
+.cache/
+.ipynb_checkpoints/
+__pycache__/
+.pytest_cache/
+*.pyc
+*.zip
+*.pt
+*.pth
+*.ckpt
+*.wav
+*.flac
+data/probes/
+data/asr/
+data/tts/
+data/speakers/
+data/phoneme_layer_datasets/
+data/mfcc_layer_datasets/
+data/.*.complete
+pretrained_models/
+results/
+submission_work/
+dist/
+
+# Instructor-only materials must never be added to this student-facing fork.
+autograder/
+instructor/
+validation/
+data/smoke/
+*ANSWER_KEY*
+*STAFF*

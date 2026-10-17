@@ -1,0 +1,14 @@
+{
+  "hubert": {
+    "repository": "facebook/hubert-base-ls960",
+    "revision": "dba3bb02fda4248b6e082697eee756de8fe8aa8a"
+  },
+  "whisper": {
+    "repository": "openai/whisper-large-v3-turbo",
+    "revision": "41f01f3fe87f28c78e2fbf8b568835947dd65ed9"
+  },
+  "cosy": {
+    "repository": "FunAudioLLM/CosyVoice2-0.5B",
+    "revision": "eec1ae6c79877dbd9379285cf8789c9e0879293d"
+  }
+}
