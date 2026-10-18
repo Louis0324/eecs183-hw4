@@ -45,7 +45,7 @@ three reference epochs, using the same 200 texts and voice prompt. Further
 training can improve quality; these measurements do not guarantee the outcome
 of a student run. Performance thresholds are listed below.
 
-Course downloads use the fixed `hw4-2026-v1` release. Data/checkpoints are checked
+Course downloads use the fixed `hw4-2026-v2` release. Data/checkpoints are checked
 against SHA-256 hashes; downloads are cached within the runtime, and rerunning a
 completed data cell reuses its extracted files. After Colab deletes a runtime,
 its local cache is lost and those files must download again. No full repository

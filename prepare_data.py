@@ -10,7 +10,7 @@ ROOT = Path(__file__).resolve().parent
 
 
 def install_release(archive, data_root='data'):
-    """Install a staff-prepared compact release (paths are rooted at data/)."""
+    """Install a course release, including the original speaker archive layout."""
     destination = Path(data_root)
     destination.mkdir(parents=True, exist_ok=True)
     with zipfile.ZipFile(archive) as z:
@@ -18,9 +18,16 @@ def install_release(archive, data_root='data'):
             p = Path(info.filename)
             if p.is_absolute() or '..' in p.parts or ((info.external_attr >> 16) & 0o170000) == 0o120000:
                 raise ValueError('Unsafe release archive path')
-            if not p.parts or p.parts[0] != 'data' or info.is_dir():
+            if not p.parts or info.is_dir():
                 continue
-            target = destination.joinpath(*p.parts[1:])
+            if p.parts[0] == 'data':
+                target = destination.joinpath(*p.parts[1:])
+            elif p.parts[0] == 'lsmini-20speakers-50recordings':
+                # Preserve the original 1,000 recordings; normalize only their
+                # archive prefix to the directory expected by Part A.
+                target = destination.joinpath('speakers', *p.parts[1:])
+            else:
+                continue
             if not target.resolve().is_relative_to(destination.resolve()):
                 raise ValueError('Release path leaves the data directory')
             target.parent.mkdir(parents=True, exist_ok=True)
