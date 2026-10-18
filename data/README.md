@@ -2,7 +2,7 @@
 
 The notebooks automatically download these files from the public
 [course Hugging Face repository](https://huggingface.co/datasets/Louis0324/eecs183-hw4),
-using the fixed `hw4-2026-v2` release. No account or token is needed. Data files are
+using the fixed `hw4-2026-v3` release. No account or token is needed. Data files are
 separate from the small `hw4-student.zip` support bundle; each notebook downloads
 only what it uses, checks SHA-256 hashes, and extracts the needed data. Cached
 files and successfully extracted datasets are reused when cells are rerun.

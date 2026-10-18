@@ -2,59 +2,37 @@ HW4 REPORT
 Name:
 Student ID:
 
-Replace bracketed instructions with your work. Keep the five section headings
-A1, A2, A3, B1, C1 exactly as written. Copy this template into Google Docs, Word,
-or LaTeX and export report.pdf with selectable text. Figures may be images, but
-answers and captions must be text. Use readable axes and legends. A few sentences
-per section are enough; there is no minimum page count. Do not paste full code.
-Submit ONE combined report.pdf for all parts, not separate A/B/C PDFs. Keep all
-five headings even for a partial submission. For an unfinished answer, write
-"Not completed" and briefly state what you did finish. You may answer B1/C1
-even if you have not trained that model; those questions need no experiment.
+Export one report.pdf with selectable text. Follow the report prompts in each
+notebook: 3–5 sentences per section, plus requested figures/sequences.
+Keep all five headings; write "Not completed" for unfinished work.
 
-EXPERIMENT SUMMARY (context, not a separate graded question)
-A: epochs per layer, batch size, learning rate, layers completed, smoke/full run:
-B: HuBERT layer/frozen parameters, updates or epochs completed, batch size:
-C: model dimensions, starter checkpoint or from scratch, additional student updates/epochs, batch size:
-Compute limits or incomplete runs:
+TRAINING SUMMARY (one line per part: epochs/updates, batch size, learning rate, incomplete work)
+A:
+B:
+C: [Include whether you used the starter checkpoint.]
 
-A1 — PHONEME PROBING (3 points)
-Status: [Completed / Partially completed / Not completed]
-Figure A1: [Insert accuracy-versus-layer plot. Put its caption here as text.]
-Answer A1: [3–5 sentences: best observed layer, phonetic trend, one limitation.]
+A1 — PHONEME PROBING
+Figure A1 and caption:
+Answer A1:
 
-A2 — MFCC PROBING (3 points)
-Status: [Completed / Partially completed / Not completed]
-Figure A2: [Insert R²-versus-layer plot. Put its caption here as text.]
-Answer A2: [3–5 sentences: best observed layer, meaning of layer 0, comparison
-with the phoneme trend.]
+A2 — MFCC PROBING
+Figure A2 and caption:
+Answer A2:
 
-A3 — SPEAKER ANALYSIS (3 points)
-Status: [Completed / Partially completed / Not completed]
-Figure A3: [Insert the 13 t-SNE panels with layer labels and speaker legend.
-Put the caption, seed, and perplexity here as text.]
-Answer A3: [3–5 sentences: speaker separation across layers, relation to A1/A2,
-one limitation of t-SNE.]
+A3 — SPEAKER ANALYSIS
+Figure A3 and caption (include layer labels, speaker legend, seed/perplexity):
+Answer A3:
 
-B1 — CTC DECODING AND EVALUATION (3 points)
-Status: [Completed / Partially completed / Not completed]
-Decoded sequence: [Greedy CTC result for A, A, blank, A, B, B, blank.]
-Answer B1: [About 3–5 sentences total: collapse/remove order; why CTC loss and
-decoding need valid encoded lengths; why validation WER selects checkpoints.]
+B1 — CTC DECODING AND EVALUATION
+Decoded sequence:
+Answer B1:
 
-C1 — TEACHER FORCING, MASKING, AND WER (3 points)
-Status: [Completed / Partially completed / Not completed]
-Input sequence: [For text t0 and speech s0, s1, include SOS and TASK.]
-Target sequence: [Include ignored targets and EOS.]
-Answer C1: [About 3–5 sentences total: which position predicts the first speech
-token; what causal and padding masks prevent; why WER does not measure voice
-similarity to the prompt speaker.]
+C1 — TEACHER FORCING, MASKING, AND WER
+Input sequence:
+Target sequence:
+Answer C1:
 
-BONUS — OWN VOICE (optional, up to 10 points)
-Status: [Not attempted / Partially completed / Completed]
-Recording setup: [Two microphones, the same three environments for both, five
-different sentences per microphone/environment combination: 30 recordings total.]
-Figure BONUS: [Add the six recording-condition groups to one speaker plot using
-your chosen HuBERT layer. Label the groups and give a caption; omit personal audio.]
-Answer BONUS: [How your groups sit relative to other speakers, and how the six
-groups sit relative to each other. Explain the observed microphone/environment effects.]
+BONUS — OWN VOICE (optional)
+Recording setup and chosen layer:
+Figure BONUS and caption:
+Answer BONUS:
