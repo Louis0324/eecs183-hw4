@@ -1,7 +1,7 @@
 # EECS 183/283A Homework 4: Speech Processing
 
-Complete Parts A, B, and C in Google Colab. Each notebook contains the questions,
-coding TODOs, and detailed instructions.
+Complete Parts A, B, and C in Google Colab. The notebooks contain the coding TODOs,
+report questions, and grading rubrics.
 
 ## 1. Start in Colab
 
@@ -14,8 +14,10 @@ coding TODOs, and detailed instructions.
 1. Choose **File → Save a copy in Drive**, then **Runtime → Change runtime type → GPU**.
 2. Run the setup and data cells. Materials download automatically from
    [Hugging Face](https://huggingface.co/datasets/Louis0324/eecs183-hw4); no account or manual download is needed.
-3. Complete the TODOs, then train and evaluate as instructed. Use `SMOKE_TEST=True`
-   for a quick check; switch back to `False` for the full experiments.
+   See [download sizes](data/README.md).
+3. Complete the TODOs. Set `SMOKE_TEST=True` in setup for a quick check. For full
+   experiments, set it to `False`, choose a fresh `RESULTS` folder, and rerun from setup.
+   Run evaluation/export cells before packaging; performance points use saved test predictions.
 
 Part C includes a starter checkpoint and defaults to **one additional training epoch**.
 **Colab storage is temporary:** save your notebooks, checkpoints, and results to
@@ -25,8 +27,8 @@ Drive or download them before your runtime ends.
 
 Use [report_template.txt](report_template.txt) to create **one `report.pdf` for all
 three parts**. Put conceptual answers and requested figures in the PDF, using the
-section headings **A1, A2, A3, B1, C1**. Keep the text selectable and write
-`Not completed` for unfinished answers. The exact questions are in the notebooks.
+section headings **A1, A2, A3, B1, C1**. Aim for 3–5 sentences total per section,
+plus figures/sequences. Keep text selectable; mark unfinished items `Not completed`.
 
 **Grading:** 85 points from the autograder (code and model performance) + 15 points
 for the report. The optional speaker experiment offers up to 10 bonus points.
@@ -44,10 +46,10 @@ Run the **final cell** in each notebook to package your work:
    to Gradescope.
 
 At earlier report prompts, upload your current combined PDF or cancel if it is
-not ready. Cancelling keeps any report already included in an earlier ZIP.
+not ready. Cancelling keeps any PDF already imported or saved by the packager.
 
 **Incomplete work is accepted.** If you finish only A or A+B, submit your latest
-ZIP with your report. If you work only on B or C, cancel the earlier-ZIP prompt.
+ZIP with your report. For B or C alone, cancel the earlier-ZIP prompt.
 Correctly completed questions are graded independently.
 
 The ZIP includes your notebooks, available predictions/plots, and report.

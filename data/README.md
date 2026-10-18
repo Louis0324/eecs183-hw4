@@ -2,11 +2,11 @@
 
 The notebooks automatically download these files from the public
 [course Hugging Face repository](https://huggingface.co/datasets/Louis0324/eecs183-hw4),
-using the fixed `hw4-2026-v3` release. No account or token is needed. Data files are
+using the fixed `hw4-2026-v4` release. No account or token is needed. Data files are
 separate from the small `hw4-student.zip` support bundle; each notebook downloads
 only what it uses, checks SHA-256 hashes, and extracts the needed data. Cached
 files and successfully extracted datasets are reused when cells are rerun.
-For offline use, set `DATA_ARCHIVE` to an already downloaded ZIP.
+To use a local A/B/C data ZIP, set `DATA_ARCHIVE` in that notebook's data cell.
 
 | Part | File | Download | Contents |
 |---|---|---:|---|
@@ -21,24 +21,20 @@ targets share the same features, avoiding duplicate downloads. B has about two
 hours of training audio and ten minutes each of validation/test audio. Speakers
 are disjoint across these splits. B test transcripts are withheld.
 
-A/B use a deterministic subset of the public
+A/B use a fixed subset of the public
 [LibriSpeech alignments dataset](https://huggingface.co/datasets/gilkeyio/librispeech-alignments),
 revision `0daa1eb43dda38ee6ce752e785555380e5628f5c`. The archive contains attribution,
 split IDs, extraction settings, and seed 183. Phoneme labels are forced-aligner
 annotations, not manually verified ground truth.
 
-C stores speech-token sequences and text, rather than raw audio. Its original
-training file is preserved byte for byte. Validation excludes the 200 final test
-texts (201 matching records). No TTS training examples were subsampled. Length
-limits in the notebook accommodate the original training cache.
+C stores text and speech tokens. It includes the full original training cache;
+no training examples were subsampled. Validation excludes the 200 final test
+texts (201 matching records).
 
 Additional model downloads: HuBERT about 360 MiB (A speaker analysis and B);
 CosyVoice inference components about 1,013 MiB (C; only about 4 MiB of tokenizer
 files are needed to start training); Whisper about 1,543 MiB for C's final WER
-evaluation. Dependencies also require downloads. These original models already come from
-Hugging Face at pinned revisions; the course repository does not duplicate them.
+evaluation. Dependencies also require downloads. These models come from their
+original Hugging Face repositories at fixed revisions.
 A fresh Colab runtime may need to download its files again; optionally keep your
-own cache on Drive across sessions. A does not download source speech archives for probing.
-
-`smoke/` contains small staff validation fixtures. They are not a replacement
-training set and are excluded from the student bundle.
+own cache on Drive across sessions. A's probing tasks use cached features and need no raw audio.

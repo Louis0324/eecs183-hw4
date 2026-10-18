@@ -1,7 +1,7 @@
 """Small, dependency-free bootstrap embedded in the distributed notebooks."""
 
 
-def ensure_hw4_support(repo_id=None, revision='hw4-2026-v3', packager_only=False):
+def ensure_hw4_support(repo_id=None, revision='hw4-2026-v4', packager_only=False):
     """Fetch the public support bundle, or use a local/uploaded offline copy."""
     import hashlib
     from io import BytesIO

@@ -3,8 +3,8 @@ Name:
 Student ID:
 
 Export one report.pdf with selectable text. Follow the report prompts in each
-notebook: 3–5 sentences per section, plus requested figures/sequences.
-Keep all five headings; write "Not completed" for unfinished work.
+notebook: aim for 3–5 sentences total per section, plus requested figures/sequences.
+Keep A1, A2, A3, B1, C1; retain completed answers and mark unfinished items "Not completed".
 
 TRAINING SUMMARY (one line per part: epochs/updates, batch size, learning rate, incomplete work)
 A:
